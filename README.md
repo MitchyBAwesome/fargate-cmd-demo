@@ -18,7 +18,7 @@ REPO="go-http-server"
 ```
 2. Start by creating an ECR (Elastic Container Registry) repository.
 ```
-aws ecr create-repository --repository-name "go-http-server"
+aws ecr create-repository --repository-name ${REGION}
 ```
 3. Login to ecr
 ```
