@@ -1,0 +1,24 @@
+{
+    "family": "go-http-server", 
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::614658524125:role/ecsTaskExecutionRole", 
+    "containerDefinitions": [
+        {
+            "name": "go-http-server", 
+            "image": "614658524125.dkr.ecr.us-west-2.amazonaws.com/go-http-server:latest", 
+            "portMappings": [
+                {
+                    "containerPort": 8000, 
+                    "hostPort": 8000, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "essential": true
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512"
+}
