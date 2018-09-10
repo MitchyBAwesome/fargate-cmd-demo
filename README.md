@@ -3,7 +3,9 @@
 1. Create some environment variables
 
 ACCOUNT_ID="000000000"
+
 REGION="us-west-2" 
+
 REPO="go-http-server"
  
 2. Login to ecr
